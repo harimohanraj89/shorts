@@ -22,7 +22,6 @@ body {
 
 img {
   width: 200px;
-  margin-bottom: 100px;
   cursor: pointer;
 }
 
@@ -36,8 +35,17 @@ img:active {
 
 input[type=text] {
   width: 400px;
-  font-size: 16px;
+  font-size: 24px;
   padding: 8px;
+  box-shadow: none;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: 'Comic Sans MS';
+}
+
+input[type=text]:hover, input[type=text]:focus {
+  border: 1px solid #aaa;
+  outline: none;
 }
 
 button {

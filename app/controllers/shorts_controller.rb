@@ -5,7 +5,7 @@ class ShortsController < ApplicationController
 
   def create
     @short = Short.find_or_create_by(short_params)
-    if @short
+    if @short.persisted?
       @disp = [
         request.protocol,
         request.host,
